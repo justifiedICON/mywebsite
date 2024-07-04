@@ -1,0 +1,361 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 50px;
+}
+
+main {
+    background-color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    padding: 3% 6%;
+    background-color: cornflowerblue;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-list li {
+    margin: 0 30px;
+}
+
+.navbar-list li a {
+    text-decoration: none;
+    color: #f3efef;
+    padding: 10px 15px;
+    font-weight: 400;
+    font-size: large;
+    box-sizing: border-box;
+    transition: 1s;
+    border: 2px solid transparent;
+}
+
+header a:hover {
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+
+.banner {
+    margin: 10% 0;
+    padding-top: 3%;
+    text-align: center;
+    background-color: #fff;
+}
+
+.banner p {
+    font-size: 30px;
+    font-weight: bold;
+    color: cornflowerblue;
+}
+
+.banner h1 {
+    font-size: 90px;
+    font-weight: bolder;
+    margin: 20px 0 30px 0;
+}
+
+.banner h2 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+h2 span {
+    color: cornflowerblue;
+    text-decoration: underline;
+}
+
+#about-section {
+    display: flex;
+    padding: 5% 10%;
+}
+
+.image {
+    max-width: 50%;
+}
+
+.about-text {
+    padding: 0 8%;
+    margin-bottom: 4%;
+}
+
+.about-text h1 {
+    padding-bottom: 5%;
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.about-list {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.about-list a {
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: 1s;
+    color: cornflowerblue;
+}
+
+.about-list a:hover {
+    text-decoration: underline;
+}
+
+#goals-section {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: 5% 0;
+}
+
+#goals-section h1 {
+    padding-bottom: 5%;
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+footer {
+    padding: 3% 6%;
+    background-color: cornflowerblue;
+    text-align: center;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 24px;
+    width: 30px;
+}
+
+.menu-icon div {
+    background-color: white;
+    height: 4px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Media queries for tablets (portrait and landscape) */
+@media (max-width: 1024px) {
+    .navbar-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-list li a {
+        text-decoration: none;
+        color: #f3efef;
+        padding: 0;
+        font-weight: 400;
+        font-size: large;
+        box-sizing: border-box;
+        transition: none;
+        border: none;
+    }
+
+    header a:hover {
+        border: none;
+    }
+
+    .navbar-list li {
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    /* Change icon to "X" */
+    .menu-icon.change .bar1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .menu-icon.change .bar2 {
+        opacity: 0;
+    }
+
+    .menu-icon.change .bar3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .navbar-list.active {
+        display: flex;
+    }
+
+    #about-section {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image {
+        max-width: 100%;
+    }
+
+    .about-text {
+        padding: 20px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    #goals-section {
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+/* Media queries for phones (portrait and landscape) */
+@media (max-width: 768px) {
+    .navbar-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-list li a {
+        text-decoration: none;
+        color: #f3efef;
+        padding: 0;
+        font-weight: 400;
+        font-size: large;
+        box-sizing: border-box;
+        transition: none;
+        border: none;
+    }
+
+    header a:hover {
+        border: none;
+    }
+
+    .navbar-list li {
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    /* Change icon to "X" */
+    .menu-icon.change .bar1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .menu-icon.change .bar2 {
+        opacity: 0;
+    }
+
+    .menu-icon.change .bar3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .navbar-list.active {
+        display: flex;
+    }
+
+    .navbar-list.active {
+        display: flex;
+    }
+
+    #about-section {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image {
+        max-width: 100%;
+    }
+
+    .about-text {
+        padding: 20px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    #goals-section {
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+/* Additional specific styles for small phones (optional) */
+@media (max-width: 480px) {
+    .navbar-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-list li {
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    /* Change icon to "X" */
+    .menu-icon.change .bar1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .menu-icon.change .bar2 {
+        opacity: 0;
+    }
+
+    .menu-icon.change .bar3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .navbar-list.active {
+        display: flex;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    #about-section {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image {
+        max-width: 100%;
+    }
+
+    .about-text {
+        padding: 20px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    #goals-section {
+        padding: 20px;
+        text-align: center;
+    }
+}

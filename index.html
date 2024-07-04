@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav class="navbar">
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <ul class="navbar-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about-section">About</a></li>
+                    <li><a href="#goals-section">Goals</a></li>
+                    <!-- <li><a href="http://">Contact</a></li> -->
+                </ul>
+            </nav>
+        </header>
+        <div class="banner">
+            <p>Hey! I am<br> <span class="name">
+                    <h1>Israel Onwuzama</h1>
+                </span></p>
+            <h2>I am a <span>Frontend Developer.</span></h2>
+        </div>
+        <div id="about-section">
+            <div class="image">
+                <img data-testId="slackProfilePicture" src="photos/Slack photo.png" alt="my photo
+                    ">
+            </div>
+            <div class="about-text">
+                <h1>About Me</h1>
+                <p>I am a highly motivated and driven individual who will keep going at a thing until he achieves
+                    it.With my keen eye for details and analytical mindset, I have been able to lead teams over the
+                    last 5years to achieve set goals. <br> I am able to stay ahead of the game by constantly
+                    exposing my mind to new and fresh things in any area of endeavor I find myself in.</p><br><br>
+                <ul class="about-list">
+                    <li data-testId="slackDisplayName"><b>Display Name:</b> justICON</li>
+                    <li data-testId="slackEmail"><b>Email:</b> icon.yahweh@gmail.com</li>
+                    <li id="current-time" data-testId="currentTimeUTC"><b>Current Time:</b> </li>
+                    <li id="current-date" data-testId="currentDay"><b>Current Day of the Week:</b> </li>
+                    <li data-testId="hngLink"><a href="http://hng.tech/learn">hng.tech/learn</a></li>
+                    <li data-testId="keywordLink"><a href="http://keyword.dog/">keyword.dog</a></li>
+                    <li data-testId="scrapeanywebLink"><a href="http://scrapeanyweb.site/">scrapeanyweb.site</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="goals-section">
+            <h1>My Goals</h1>
+            <h2>Here are my goals for the next two years as a Frontend Developer</h2>
+            <p class="head-text"><b>Technical Skills Development</b></p>
+            <p>1. Master JavaScript Frameworks: Deepen my knowledge of popular JavaScript frameworks like React,
+                Angular, or Vue.js. <br>Build and deploy several applications using these frameworks to demonstrate
+                your expertise. <br>
+                2. Improve CSS Skills: Learn advanced CSS techniques, including CSS Grid, Flexbox, and animations.
+                Create a portfolio of visually appealing, responsive websites.</p><br>
+            <p class="head-text2"><b>Career Development</b></p>
+            <p>1. Contribute to Open Source: Regularly contribute to open-source projects on platforms like GitHub. <br>
+                2. Certification and Courses: Complete certifications from recognized platforms (e.g., FreeCodeCamp,
+                Udemy, Coursera) in frontend
+                development and related fields.<br>
+                3. Secure a Senior or Lead Role: Work towards a promotion to a senior or lead frontend developer role by
+                demonstrating leadership, mentoring junior developers, and taking ownership of projects.
+            </p>
+
+        </div>
+        <footer>&copy; HNG 11 2024</footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
